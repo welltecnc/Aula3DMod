@@ -6,7 +6,9 @@ import Home from './routes/Home.jsx';
 import Sobre from './routes/Sobre.jsx';
 import Contato from './routes/Contato.jsx';
 import Login from './routes/Login.jsx';
+import Produtos from './routes/Produtos.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ListaProdutos from './routes/ListaProdutos.jsx';
 
 
 const router = createBrowserRouter([
@@ -20,7 +22,12 @@ const router = createBrowserRouter([
       { path: '/sobre', element: <Sobre /> },
       { path: '/contato', element: <Contato /> },
       {path:'/login',element:<Login/>},
-
+       /*Cadastrar */
+      {path:'/produtos',element:<Produtos/>},
+      /*Listar */
+      {path:'/listaprodutos',element:<ListaProdutos/>},
+       /*Editar */
+       {path:'/editarproduto/:id',element:<Produtos/>},
     ],
   },
 ]);

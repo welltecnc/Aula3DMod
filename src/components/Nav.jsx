@@ -17,6 +17,10 @@ function Nav() {
             <Link to="/Contato" className="link">
               Contato
             </Link>
+
+            <Link to="/produtos" className="link">
+              Cadastrar Produto
+            </Link>
             <Link to="/login" className="link">
               Login
             </Link>
